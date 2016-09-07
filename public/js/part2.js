@@ -65,10 +65,10 @@ $(document).on('ready', function () {
                 type: "create",
                 paper: {
                     ticker: escapeHtml($("input[name='ticker']").val()),
-                    par: Number($("select[name='par']").val()),
-                    qty: Number($("select[name='qty']").val()),
-                    discount: Number($("select[name='discount']").val()),
-                    maturity: Number($("select[name='maturity']").val()),
+                    par: escapeHtml($("input[name='par']").val()),
+                    qty: escapeHtml($("select[name='qty']").val()),
+                    discount: escapeHtml($("input[name='discount']").val()),
+                    maturity: escapeHtml($("input[name=='maturity']").val()),
                     owner: [],
                     issuer: user.name,
                     issueDate: Date.now().toString()
