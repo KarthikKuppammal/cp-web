@@ -68,7 +68,7 @@ $(document).on('ready', function () {
                     par: escapeHtml($("input[name='par']").val()),
                     qty: escapeHtml($("select[name='qty']").val()),
                     discount: escapeHtml($("input[name='discount']").val()),
-                    maturity: escapeHtml($("input[name=='maturity']").val()),
+                    maturity: escapeHtml($("input[name='maturity']").val()),
                     owner: [],
                     issuer: user.name,
                     issueDate: Date.now().toString()
